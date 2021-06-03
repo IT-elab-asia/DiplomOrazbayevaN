@@ -1,0 +1,68 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: connect EHOSTUNREACH 104.16.27.35:443 - Local (192.168.137.204:52229)
+      at internalConnect (net.js:921:16)
+      at defaultTriggerAsyncIdScope (internal/async_hooks.js:430:12)
+      at emitLookup (net.js:1064:9)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:107150:29
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:106996:25
+      at RawTask.module.exports.RawTask.call (/usr/local/lib/node_modules/yarn/lib/cli.js:83614:19)
+      at flush (/usr/local/lib/node_modules/yarn/lib/cli.js:83696:29)
+      at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+npm manifest: 
+  {
+    "name": "react-boiler",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.5.0",
+      "@testing-library/user-event": "^7.2.1",
+      "firebase": "^7.17.1",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-scripts": "3.4.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
